@@ -453,6 +453,153 @@ rules:
   # - DOMAIN-SUFFIX,blogspot.com,REJECT
 
   # ==============================
+  # 算法竞赛 Wiki / 官方开发文档
+  # ==============================
+
+  # OI Wiki（信息学竞赛知识库，含旧域跳转）
+  - DOMAIN-SUFFIX,oiwiki.org,REJECT
+  - DOMAIN-SUFFIX,oi-wiki.org,REJECT
+
+  # Hello 算法（数据结构与算法图解）
+  - DOMAIN-SUFFIX,hello-algo.com,REJECT
+
+  # CP-Algorithms（竞技算法英文 Wiki）
+  - DOMAIN-SUFFIX,cp-algorithms.com,REJECT
+
+  # USACO Guide（美国信息学奥林匹克指南）
+  - DOMAIN-SUFFIX,usaco.guide,REJECT
+
+  # VisuAlgo（数据结构/算法可视化）
+  - DOMAIN-SUFFIX,visualgo.net,REJECT
+
+  # Algorithm Visualizer（算法可视化）
+  - DOMAIN-SUFFIX,algorithm-visualizer.org,REJECT
+
+  # C / C++ 参考文档
+  - DOMAIN-SUFFIX,cppreference.com,REJECT
+  - DOMAIN-SUFFIX,cplusplus.com,REJECT
+
+  # Python 官方文档 / PEP（整域覆盖 docs、peps、www）
+  - DOMAIN-SUFFIX,python.org,REJECT
+
+  # Java 官方文档（Oracle Java Docs / dev.java）
+  - DOMAIN-SUFFIX,docs.oracle.com,REJECT
+  - DOMAIN-SUFFIX,dev.java,REJECT
+
+  # Read the Docs（海量开源库文档托管）
+  - DOMAIN-SUFFIX,readthedocs.io,REJECT
+  - DOMAIN-SUFFIX,readthedocs.org,REJECT
+  - DOMAIN-SUFFIX,rtfd.io,REJECT
+
+  # DevDocs（聚合式开发文档）
+  - DOMAIN-SUFFIX,devdocs.io,REJECT
+
+  # GitBook（大量竞赛/技术 Wiki 托管）
+  - DOMAIN-SUFFIX,gitbook.io,REJECT
+
+  # MDN Web Docs（HTML/CSS/JS 权威文档）
+  - DOMAIN-SUFFIX,developer.mozilla.org,REJECT
+
+  # ---- Python 各发行版 / 实现（衍生版）文档 ----
+
+  # Anaconda 发行版 / conda / conda-forge
+  - DOMAIN-SUFFIX,anaconda.com,REJECT
+  - DOMAIN-SUFFIX,conda.io,REJECT
+  - DOMAIN-SUFFIX,conda-forge.org,REJECT
+
+  # Jupyter / IPython
+  - DOMAIN-SUFFIX,jupyter.org,REJECT
+  - DOMAIN-SUFFIX,ipython.org,REJECT
+
+  # PyPy（JIT 实现）
+  - DOMAIN-SUFFIX,pypy.org,REJECT
+
+  # MicroPython / CircuitPython（嵌入式实现）
+  - DOMAIN-SUFFIX,micropython.org,REJECT
+  - DOMAIN-SUFFIX,circuitpython.org,REJECT
+
+  # Cython（C 扩展编译器）
+  - DOMAIN-SUFFIX,cython.org,REJECT
+
+  # IronPython（.NET 实现）/ Jython（JVM 实现）
+  - DOMAIN-SUFFIX,ironpython.net,REJECT
+  - DOMAIN-SUFFIX,jython.org,REJECT
+
+  # Pyodide（浏览器/WASM 实现）/ Brython（浏览器实现）
+  - DOMAIN-SUFFIX,pyodide.org,REJECT
+  - DOMAIN-SUFFIX,brython.info,REJECT
+
+  # ActiveState（ActivePython 发行版）
+  - DOMAIN-SUFFIX,activestate.com,REJECT
+
+  # ---- Python 主流科学计算 / Web 框架官方文档 ----
+  - DOMAIN-SUFFIX,numpy.org,REJECT
+  - DOMAIN-SUFFIX,scipy.org,REJECT
+  - DOMAIN-SUFFIX,pydata.org,REJECT        # pandas / numba 等
+  - DOMAIN-SUFFIX,matplotlib.org,REJECT
+  - DOMAIN-SUFFIX,scikit-learn.org,REJECT
+  - DOMAIN-SUFFIX,sympy.org,REJECT
+  - DOMAIN-SUFFIX,pytest.org,REJECT
+  - DOMAIN-SUFFIX,djangoproject.com,REJECT
+  - DOMAIN-SUFFIX,palletsprojects.com,REJECT  # Flask / Jinja / Werkzeug
+  - DOMAIN-SUFFIX,tiangolo.com,REJECT         # FastAPI
+  - DOMAIN-SUFFIX,sqlalchemy.org,REJECT
+  - DOMAIN-SUFFIX,pytorch.org,REJECT
+  - DOMAIN-SUFFIX,tensorflow.org,REJECT
+
+  # ---- Java 各 JDK 发行版文档 ----
+
+  # OpenJDK 官方 / jdk.java.net
+  - DOMAIN-SUFFIX,openjdk.org,REJECT
+  - DOMAIN-SUFFIX,java.net,REJECT
+
+  # GraalVM（含 Native Image / GraalPy）
+  - DOMAIN-SUFFIX,graalvm.org,REJECT
+
+  # Eclipse Temurin（Adoptium）
+  - DOMAIN-SUFFIX,adoptium.net,REJECT
+
+  # Amazon Corretto（docs.aws 同时覆盖全部 AWS 文档）
+  - DOMAIN-SUFFIX,docs.aws.amazon.com,REJECT
+
+  # Microsoft Build of OpenJDK（learn 同时覆盖 .NET/Azure 等全部 MS 文档）
+  - DOMAIN-SUFFIX,learn.microsoft.com,REJECT
+
+  # Azul Zulu / BellSoft Liberica / SapMachine
+  - DOMAIN-SUFFIX,azul.com,REJECT
+  - DOMAIN-SUFFIX,bell-sw.com,REJECT
+  - DOMAIN-SUFFIX,sapmachine.io,REJECT
+
+  # IBM Semeru（developer.ibm 同时覆盖 IBM 全部开发者文档）
+  - DOMAIN-SUFFIX,developer.ibm.com,REJECT
+
+  # ---- JVM 语言 / 框架 / 构建工具文档 ----
+
+  # Kotlin / Scala / Groovy / Clojure / JRuby
+  - DOMAIN-SUFFIX,kotlinlang.org,REJECT
+  - DOMAIN-SUFFIX,scala-lang.org,REJECT
+  - DOMAIN-SUFFIX,groovy-lang.org,REJECT
+  - DOMAIN-SUFFIX,clojure.org,REJECT
+  - DOMAIN-SUFFIX,jruby.org,REJECT
+
+  # Spring 全系（含 docs.spring.io）/ Hibernate / MyBatis
+  - DOMAIN-SUFFIX,spring.io,REJECT
+  - DOMAIN-SUFFIX,hibernate.org,REJECT
+  - DOMAIN-SUFFIX,mybatis.org,REJECT
+
+  # Quarkus / Micronaut / Jakarta EE
+  - DOMAIN-SUFFIX,quarkus.io,REJECT
+  - DOMAIN-SUFFIX,micronaut.io,REJECT
+  - DOMAIN-SUFFIX,jakarta.ee,REJECT
+
+  # javadoc.io（第三方 Javadoc 托管）
+  - DOMAIN-SUFFIX,javadoc.io,REJECT
+
+  # Gradle / Apache（Maven、Commons 等全部 Apache 项目文档）
+  - DOMAIN-SUFFIX,gradle.org,REJECT
+  - DOMAIN-SUFFIX,apache.org,REJECT
+
+  # ==============================
   # 文库 / 文档分享 / 搜题 / 作业答案
   # ==============================
 
