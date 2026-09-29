@@ -139,6 +139,9 @@ rules:
   # GitHub Copilot
   - DOMAIN-SUFFIX,githubcopilot.com,REJECT
 
+  # 腾讯ima
+  - DOMAIN-SUFFIX,ima.qq.com,REJECT
+
   # ---- 以下境外 AI 站点国内直连不通，如代理常开可取消注释 ----
   # - DOMAIN-SUFFIX,openai.com,REJECT
   # - DOMAIN-SUFFIX,chatgpt.com,REJECT
