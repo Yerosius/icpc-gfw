@@ -28,6 +28,8 @@
 
 **13. 数学工具**：Wolfram Alpha、Symbolab、Mathway、Desmos、GeoGebra
 
+**14. 手机厂商云服务**：小米、华为、荣耀、OPPO、vivo、三星、苹果、魅族、一加、realme、努比亚
+
 ## 国内天然屏蔽的网站(已注释)
 
 | 分区 | 注释域名|
