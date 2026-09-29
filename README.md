@@ -10,20 +10,20 @@
 
 **5. 社区**：知乎（含直答/专栏）、小红书、微博（.com/.cn）、豆瓣
 
-**6. 博客**：CSDN、博客园、掘金、思否、简书、OSCHINA、51CTO、InfoQ、Stack Overflow、Stack Exchange 全系、菜鸟教程、W3School、GeeksforGeeks、DEV、新浪博客、微信公众号文章、看云
+**6. 博客及技术文档**：CSDN、博客园、OI Wiki、Hello 算法、掘金、思否、简书、OSCHINA、51CTO、InfoQ、Stack Overflow、Stack Exchange 全系、菜鸟教程、W3School、GeeksforGeeks、DEV、新浪博客、微信公众号文章、看云、VisuAlgo、CP-Algorithms、USACO Guide、Algorithm Visualizer、Read the Docs、DevDocs、GitBook、MDN Web Docs、CppReference、cplusplus、Anaconda、conda、conda-forge、Jupyter、IPython、PyPy、MicroPython、CircuitPython、Cython、IronPython（.NET）、Jython（JVM）、Pyodide（WASM）、Brython（浏览器）、ActiveState、NumPy、SciPy、PyData（pandas/numba）、Matplotlib、scikit-learn、SymPy、pytest、Django、Pallets（Flask/Jinja）、FastAPI（tiangolo）、SQLAlchemy、PyTorch、TensorFlow、OpenJDK、java.net、GraalVM、Eclipse Temurin、Amazon Corretto、Microsoft OpenJDK、Azul Zulu、BellSoft Liberica、SapMachine、IBM Semeru、Kotlin、Scala、Groovy、Clojure、JRuby、Spring、Hibernate、MyBatis、Quarkus、Micronaut、Jakarta EE、javadoc.io、Gradle、Apache（Maven 等全系）
 
 **7. 文库与搜题软件**：豆丁、道客巴巴、原创力Book118、人人文库、360doc、爱问共享、MBA智库、作业帮（zybang/zuoyebang）、小猿/猿辅导、学小易、Chegg、Course Hero、StuDocu、Scribd、Quizlet、Brainly
 
 **8. 在线文档 / 云笔记**：MS365/Office、OneDrive（含1drv）、SharePoint、OneNote、WPS、金山文档kdocs、docer、飞书（整域，含邮箱）、Lark、腾讯文档、石墨、语雀、Notion（含 notion.site 发布页）、Obsidian（Sync/Publish）、HackMD、印象/Evernote、有道云笔记、为知、幕布、Confluence/Jira、ProcessOn、boardmix、Logseq、XMind
 
-**9. 网盘 / 在线粘贴板**：阿里云盘（含旧域）、微云、115、蓝奏云、奶牛快传、文叔叔、迅雷云盘、123云盘、天翼云盘、移动云盘、AirDroid、Send Anywhere、SM.MS 图床、Pastebin、JustPaste
+**9. 网盘 / 在线粘贴板**：阿里云盘（含旧域）、微云、115、蓝奏云、奶牛快传、文叔叔、迅雷云盘、123云盘、天翼云盘、移动云盘、AirDroid、Send Anywhere、SM.MS 图床、Pastebin、JustPaste、Debian粘贴板、Opensuse粘贴板、KDE粘贴板、dpaste.com、dpaste.org、bpaste.net、paste.rs、ix.io、termbin.com、sprunge.us、clbin.com
 
 **10. PDF批注软件**：GoodNotes、Notability、MarginNote、Noteshelf、CollaNote、LiquidText、AnkiWeb、RemNote、MindNode
 
-**11. 代码托管仓库**：GitHub（含 usercontent/assets/io）、Gitee、GitLab、GitLab中国（gitlab.cn/jihulab）、Bitbucket、CODING、阿里云效Codeup、Azure DevOps/Visual Studio、Gitea、Codeberg、SourceHut、Launchpad、SourceForge、GNU Savannah、GitCode、AtomGit、OpenI、GitLink，及镜像加速 kkgithub/gitclone/ghproxy/gh-proxy
+**11. 代码托管仓库**：GitHub（含 usercontent/assets/io）及其Pages、Gitee及其Pages、GitLab及其Pages、GitLab中国（gitlab.cn/jihulab）、Bitbucket、CODING、阿里云效Codeup、Azure DevOps/Visual Studio、Gitea、Codeberg、SourceHut、Launchpad、SourceForge、GNU Savannah、GitCode、AtomGit、OpenI、GitLink，及镜像加速 kkgithub/gitclone/ghproxy/gh-proxy
 
 **12. 邮箱**：QQ邮箱、腾讯企业邮、Foxmail、网易系（163/126/yeah/188/企业邮）、新浪、搜狐、139邮箱（含10086/wapmail）、189邮箱（含wapmail）、沃邮箱、阿里邮箱（个人/企业）、21cn、TOM（含163.net）、263（个人/企业263xmail）、Outlook/Hotmail（含 live/office365）
 
 **13. 数学工具**：Wolfram Alpha、Symbolab、Mathway、Desmos、GeoGebra
 
-**14. 手机厂商云服务**：小米、华为、荣耀、OPPO、vivo、三星、苹果、魅族、一加、realme、努比亚
+**14. 手机厂商云服务**：小米、华为、荣耀、OPPO、vivo、三星、苹果、魅族、一加、realme、努比亚、锤子
