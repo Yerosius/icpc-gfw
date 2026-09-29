@@ -1,7 +1,5 @@
 # icpc-gfw
 
-## 被屏蔽网站
-
 **1. 搜索引擎**：Bing（bing.com/bingapis）、百度（整域，同时覆盖知道/百科/经验/文库/网盘/贴吧）、搜狗（含微信搜索）、360搜索、神马、夸克（含网盘/题库）、秘塔AI搜索、纳米AI搜索、头条搜索、Yahoo Japan
 
 **2. 国内 AI 大模型**：DeepSeek、通义千问（tongyi/qianwen/qwen.ai）、Kimi、智谱GLM（zhipuai/chatglm/bigmodel）、豆包、文心一言、腾讯元宝、腾讯混元、讯飞星火、天工、360智脑、商汤日日新/商量、海螺/MiniMax、百川、零一万物、阶跃星辰、面壁、扣子Coze、可灵、即梦、Liblib、魔搭ModelScope、小米MiMo、无问芯穹、hf-mirror、Trae、GitHub Copilot
@@ -29,14 +27,3 @@
 **13. 数学工具**：Wolfram Alpha、Symbolab、Mathway、Desmos、GeoGebra
 
 **14. 手机厂商云服务**：小米、华为、荣耀、OPPO、vivo、三星、苹果、魅族、一加、realme、努比亚
-
-## 国内天然屏蔽的网站(已注释)
-
-| 分区 | 注释域名|
-|---|---|---|
-| AI | openai、chatgpt、oaistatic、oaiusercontent、Google AI（generativelanguage/aistudio）、copilot（microsoft/.com）、claude.ai、anthropic、perplexity、grok、x.ai、character.ai、poe、huggingface、cursor（.com/.sh）、windsurf、codeium、openrouter |
-| 视频| youtube、ytimg、twitch、nicovideo |
-| 社交| reddit、quora |
-| 博客 | medium、wordpress.com、blogspot |
-| 云文档 | Google Drive/Docs、Dropbox |
-| 邮箱 | gmail、googlemail、proton.me、protonmail、yahoo.com |
