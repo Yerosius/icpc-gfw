@@ -589,7 +589,6 @@ rules:
   # - DOMAIN-SUFFIX,drive.google.com,REJECT
   # - DOMAIN-SUFFIX,docs.google.com,REJECT
   # - DOMAIN-SUFFIX,dropbox.com,REJECT
-  - DOMAIN-SUFFIX,icloud.com,REJECT 
 
   # ==============================
   # 网盘 / 文件传输 / 粘贴板
@@ -674,6 +673,54 @@ rules:
   # MindNode（分享/同步）
   - DOMAIN-SUFFIX,mindnode.com,REJECT
 
+  # ==============================
+  # 手机厂商云服务（网页版云空间 + 账号）
+  # ==============================
+
+  # 苹果 iCloud（备忘录 / 无边记 / iCloud 云盘 / 查找）
+  - DOMAIN-SUFFIX,icloud.com,REJECT
+  - DOMAIN-SUFFIX,appleid.apple.com,REJECT
+
+  # 小米云服务 / 小米账号
+  - DOMAIN-SUFFIX,i.mi.com,REJECT
+  - DOMAIN-SUFFIX,account.xiaomi.com,REJECT
+
+  # 华为云空间（整域覆盖图库/备忘录/云盘及 id* 账号登录）
+  - DOMAIN-SUFFIX,cloud.huawei.com,REJECT
+
+  # 荣耀云空间 / 荣耀账号（hihonor）
+  - DOMAIN-SUFFIX,cloud.honor.com,REJECT
+  - DOMAIN-SUFFIX,hihonor.com,REJECT
+
+  # OPPO 云服务 / HeyTap 账号
+  - DOMAIN-SUFFIX,cloud.oppo.com,REJECT
+  - DOMAIN-SUFFIX,id.oppo.com,REJECT
+  - DOMAIN-SUFFIX,id.heytap.com,REJECT
+
+  # realme 真我云服务（含 HeyTap 通用入口）
+  - DOMAIN-SUFFIX,cloud.realme.com,REJECT
+  - DOMAIN-SUFFIX,cloud.heytap.com,REJECT
+
+  # 一加云服务（OnePlus，账号走 HeyTap）
+  - DOMAIN-SUFFIX,cloud.oneplus.in,REJECT
+
+  # vivo 云服务（国内 yun / 国际 cloud）
+  - DOMAIN-SUFFIX,yun.vivo.com.cn,REJECT
+  - DOMAIN-SUFFIX,cloud.vivo.com,REJECT
+
+  # 三星 Samsung Cloud / Samsung Account
+  - DOMAIN-SUFFIX,samsungcloud.com,REJECT
+  - DOMAIN-SUFFIX,account.samsung.com,REJECT
+
+  # 魅族 Flyme 云服务（整域覆盖云服务与账号）
+  - DOMAIN-SUFFIX,flyme.cn,REJECT
+
+  # 锤子 / 坚果 欢喜云（Smartisan）
+  - DOMAIN-SUFFIX,smartisan.com,REJECT
+
+  # 努比亚 Nubia Cloud / Nubia ID（整域覆盖账号中心）
+  - DOMAIN-SUFFIX,nubia.com,REJECT
+  
   # ==============================
   # 代码托管 / 代码仓库
   # ==============================
