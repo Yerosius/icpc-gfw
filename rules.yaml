@@ -504,12 +504,12 @@ rules:
 
   # 注：百度文库/知道/百科/经验、百度系搜题，已被 baidu.com 整域覆盖
 
-  # ---- 数学/计算工具：考试若禁止使用再取消注释 ----
-  # - DOMAIN-SUFFIX,wolframalpha.com,REJECT
-  # - DOMAIN-SUFFIX,symbolab.com,REJECT
-  # - DOMAIN-SUFFIX,mathway.com,REJECT
-  # - DOMAIN-SUFFIX,desmos.com,REJECT
-  # - DOMAIN-SUFFIX,geogebra.org,REJECT
+  # ---- 数学/计算工具 ----
+  - DOMAIN-SUFFIX,wolframalpha.com,REJECT
+  - DOMAIN-SUFFIX,symbolab.com,REJECT
+  - DOMAIN-SUFFIX,mathway.com,REJECT
+  - DOMAIN-SUFFIX,desmos.com,REJECT
+  - DOMAIN-SUFFIX,geogebra.org,REJECT
 
   # ==============================
   # 在线文档 / 办公协作 / 云笔记
@@ -589,7 +589,7 @@ rules:
   # - DOMAIN-SUFFIX,drive.google.com,REJECT
   # - DOMAIN-SUFFIX,docs.google.com,REJECT
   # - DOMAIN-SUFFIX,dropbox.com,REJECT
-  # - DOMAIN-SUFFIX,icloud.com,REJECT   # 同时影响 Apple 备忘录/无边记/iCloud 同步
+  - DOMAIN-SUFFIX,icloud.com,REJECT 
 
   # ==============================
   # 网盘 / 文件传输 / 粘贴板
