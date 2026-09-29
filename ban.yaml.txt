@@ -1,0 +1,827 @@
+﻿# ============================================================
+# 考试屏蔽规则（Clash / Mihomo 规则片段）
+# 更新日期：2026-09-29
+#
+# 用法：将本文件 rules 段并入配置文件，或通过 rule-providers 引用
+# ============================================================
+
+rules:
+  # ==============================
+  # 搜索引擎（国内可直连）
+  # ==============================
+
+  # Bing 国内版（cn.bing.com）
+  - DOMAIN-SUFFIX,bing.com,REJECT
+  - DOMAIN-SUFFIX,bingapis.com,REJECT
+
+  # 百度（整域拦截，同时覆盖百度搜索/知道/百科/经验/文库/网盘/贴吧/好看）
+  - DOMAIN-SUFFIX,baidu.com,REJECT
+
+  # 搜狗（整域拦截会同时影响搜狗输入法云服务、搜狗微信搜索）
+  - DOMAIN-SUFFIX,sogou.com,REJECT
+
+  # 360 搜索
+  - DOMAIN-SUFFIX,so.com,REJECT
+
+  # 神马搜索（UC / 阿里）
+  - DOMAIN-SUFFIX,sm.cn,REJECT
+
+  # 夸克（含夸克高考/题库/网盘）
+  - DOMAIN-SUFFIX,quark.cn,REJECT
+
+  # 秘塔 AI 搜索
+  - DOMAIN-SUFFIX,metaso.cn,REJECT
+
+  # 纳米 AI 搜索（360）
+  - DOMAIN-SUFFIX,n.cn,REJECT
+
+  # 头条搜索
+  - DOMAIN-SUFFIX,so.toutiao.com,REJECT
+
+  # Yahoo Japan（雅虎）
+  - DOMAIN-SUFFIX,yahoo.co.jp,REJECT
+
+  # ==============================
+  # 国内AI / 大模型
+  # ==============================
+
+  # DeepSeek 深度求索（chat / platform / api / api-docs 均在该域）
+  - DOMAIN-SUFFIX,deepseek.com,REJECT
+
+  # 通义千问
+  - DOMAIN-SUFFIX,tongyi.aliyun.com,REJECT
+  - DOMAIN-SUFFIX,qianwen.com,REJECT
+  - DOMAIN-SUFFIX,qwen.ai,REJECT
+
+  # Kimi
+  - DOMAIN-SUFFIX,kimi.com,REJECT
+  - DOMAIN-SUFFIX,kimi.ai,REJECT
+  - DOMAIN-SUFFIX,moonshot.cn,REJECT
+
+  # 智谱 GLM / 清言 / BigModel
+  - DOMAIN-SUFFIX,zhipuai.cn,REJECT
+  - DOMAIN-SUFFIX,chatglm.cn,REJECT
+  - DOMAIN-SUFFIX,bigmodel.cn,REJECT
+
+  # 豆包（字节）
+  - DOMAIN-SUFFIX,doubao.com,REJECT
+
+  # 文心一言 / 文心大模型（百度，百度整域已覆盖，保留以便单独维护）
+  - DOMAIN-SUFFIX,yiyan.baidu.com,REJECT
+  - DOMAIN-SUFFIX,ernie.baidu.com,REJECT
+
+  # 腾讯元宝
+  - DOMAIN-SUFFIX,yuanbao.tencent.com,REJECT
+
+  # 腾讯混元
+  - DOMAIN-SUFFIX,hunyuan.tencent.com,REJECT
+
+  # 讯飞星火
+  - DOMAIN-SUFFIX,xinghuo.xfyun.cn,REJECT
+  - DOMAIN-SUFFIX,spark.xfyun.cn,REJECT
+
+  # 天工 AI（昆仑万维）
+  - DOMAIN-SUFFIX,tiangong.cn,REJECT
+
+  # 360 智脑
+  - DOMAIN-SUFFIX,ai.360.com,REJECT
+  - DOMAIN-SUFFIX,chat.360.cn,REJECT
+
+  # 商汤 日日新 / 商量
+  - DOMAIN-SUFFIX,platform.sensenova.cn,REJECT
+  - DOMAIN-SUFFIX,chat.sensetime.com,REJECT
+
+  # MiniMax / 海螺 AI
+  - DOMAIN-SUFFIX,hailuoai.com,REJECT
+  - DOMAIN-SUFFIX,minimaxi.com,REJECT
+  - DOMAIN-SUFFIX,minimax.chat,REJECT
+
+  # 百川智能
+  - DOMAIN-SUFFIX,baichuan-ai.com,REJECT
+
+  # 零一万物
+  - DOMAIN-SUFFIX,lingyiwanwu.com,REJECT
+
+  # 阶跃星辰
+  - DOMAIN-SUFFIX,stepfun.com,REJECT
+
+  # 面壁智能 MiniCPM
+  - DOMAIN-SUFFIX,modelbest.cn,REJECT
+
+  # 扣子 Coze（字节，国内版）
+  - DOMAIN-SUFFIX,coze.cn,REJECT
+
+  # 可灵 AI（快手，国内版）
+  - DOMAIN-SUFFIX,kling.kuaishou.com,REJECT
+  - DOMAIN-SUFFIX,klingai.com,REJECT
+
+  # 即梦 AI（字节）
+  - DOMAIN-SUFFIX,jimeng.jianying.com,REJECT
+
+  # 哩布哩布 LiblibAI
+  - DOMAIN-SUFFIX,liblib.art,REJECT
+
+  # 魔搭社区 ModelScope（阿里，国内版模型社区）
+  - DOMAIN-SUFFIX,modelscope.cn,REJECT
+
+  # 小米 MiMo 开放平台
+  - DOMAIN-SUFFIX,xiaomimimo.com,REJECT
+
+  # 无问芯穹 Infini-AI
+  - DOMAIN-SUFFIX,infini-ai.com,REJECT
+
+  # Hugging Face 国内镜像
+  - DOMAIN-SUFFIX,hf-mirror.com,REJECT
+
+  # Trae（字节 AI IDE，国内版）
+  - DOMAIN-SUFFIX,trae.com.cn,REJECT
+
+  # GitHub Copilot
+  - DOMAIN-SUFFIX,githubcopilot.com,REJECT
+
+  # ---- 以下境外 AI 站点国内直连不通，如代理常开可取消注释 ----
+  # - DOMAIN-SUFFIX,openai.com,REJECT
+  # - DOMAIN-SUFFIX,chatgpt.com,REJECT
+  # - DOMAIN-SUFFIX,oaistatic.com,REJECT
+  # - DOMAIN-SUFFIX,oaiusercontent.com,REJECT
+  # - DOMAIN-SUFFIX,generativelanguage.googleapis.com,REJECT
+  # - DOMAIN-SUFFIX,aistudio.google.com,REJECT
+  # - DOMAIN-SUFFIX,copilot.microsoft.com,REJECT
+  # - DOMAIN-SUFFIX,copilot.com,REJECT
+  # - DOMAIN-SUFFIX,claude.ai,REJECT
+  # - DOMAIN-SUFFIX,anthropic.com,REJECT
+  # - DOMAIN-SUFFIX,perplexity.ai,REJECT
+  # - DOMAIN-SUFFIX,grok.com,REJECT
+  # - DOMAIN-SUFFIX,x.ai,REJECT
+  # - DOMAIN-SUFFIX,character.ai,REJECT
+  # - DOMAIN-SUFFIX,poe.com,REJECT
+  # - DOMAIN-SUFFIX,huggingface.co,REJECT
+  # - DOMAIN-SUFFIX,cursor.com,REJECT
+  # - DOMAIN-SUFFIX,cursor.sh,REJECT
+  # - DOMAIN-SUFFIX,windsurf.com,REJECT
+  # - DOMAIN-SUFFIX,codeium.com,REJECT
+  # - DOMAIN-SUFFIX,openrouter.ai,REJECT
+
+  # ==============================
+  # API 中转站 / 聚合平台
+  # ==============================
+
+  # ChatAnywhere（国内 .tech / 境外 .org）
+  - DOMAIN-SUFFIX,chatanywhere.tech,REJECT
+  - DOMAIN-SUFFIX,chatanywhere.org,REJECT
+
+  # AiHubMix
+  - DOMAIN-SUFFIX,aihubmix.com,REJECT
+
+  # 302.AI
+  - DOMAIN-SUFFIX,302.ai,REJECT
+
+  # OhMyGPT
+  - DOMAIN-SUFFIX,ohmygpt.com,REJECT
+
+  # CloseAI
+  - DOMAIN-SUFFIX,closeai-asia.com,REJECT
+
+  # OpenAI-HK（新域 open-hk.com / 旧域 openai-hk.com）
+  - DOMAIN-SUFFIX,open-hk.com,REJECT
+  - DOMAIN-SUFFIX,openai-hk.com,REJECT
+
+  # API2D
+  - DOMAIN-SUFFIX,api2d.com,REJECT
+
+  # GPTGOD
+  - DOMAIN-SUFFIX,gptgod.online,REJECT
+
+  # V3 API
+  - DOMAIN-SUFFIX,v3api.com,REJECT
+
+  # 硅基流动 SiliconFlow
+  - DOMAIN-SUFFIX,siliconflow.cn,REJECT
+
+  # API易
+  - DOMAIN-SUFFIX,apiyi.com,REJECT
+
+  # HenAPI
+  - DOMAIN-SUFFIX,henapi.com,REJECT
+
+  # 非线智能
+  - DOMAIN-SUFFIX,nonelinear.com,REJECT
+
+  # Ofox.AI
+  - DOMAIN-SUFFIX,ofox.ai,REJECT
+
+  # PoloAPI
+  - DOMAIN-SUFFIX,poloapi.com,REJECT
+
+  # 星链 4SAPI
+  - DOMAIN-SUFFIX,4sapi.com,REJECT
+
+  # 147API
+  - DOMAIN-SUFFIX,147ai.com,REJECT
+
+  # V-API（api.gpt.ge）
+  - DOMAIN-SUFFIX,gpt.ge,REJECT
+
+  # AICodeMirror
+  - DOMAIN-SUFFIX,aicodemirror.com,REJECT
+
+  # AnyAIGC
+  - DOMAIN-SUFFIX,anyaigc.com,REJECT
+
+  # code0.ai
+  - DOMAIN-SUFFIX,code0.ai,REJECT
+
+  # 接口AI
+  - DOMAIN-SUFFIX,jiekou.ai,REJECT
+
+  # WenModel
+  - DOMAIN-SUFFIX,wenmodel.com,REJECT
+
+  # aiberm
+  - DOMAIN-SUFFIX,aiberm.com,REJECT
+
+  # deepkey
+  - DOMAIN-SUFFIX,deepkey.top,REJECT
+
+  # SkyHope AI
+  - DOMAIN-SUFFIX,flyshop.chat,REJECT
+
+  # 星链API
+  - DOMAIN-SUFFIX,chancexj.com,REJECT
+
+  # FK Claude
+  - DOMAIN-SUFFIX,fkclaude.xyz,REJECT
+
+  # IKunCode
+  - DOMAIN-SUFFIX,ikuncode.cc,REJECT
+
+  # X-aio
+  - DOMAIN-SUFFIX,x-aio.com,REJECT
+
+  # Alsa
+  - DOMAIN-SUFFIX,aisa.one,REJECT
+
+  # 小米API
+  - DOMAIN-SUFFIX,123everything.com,REJECT
+
+  # APIman
+  - DOMAIN-SUFFIX,apiman.ai,REJECT
+
+  # QQQRouter
+  - DOMAIN-SUFFIX,qqqrouter.ai,REJECT
+
+  # 老张API
+  - DOMAIN-SUFFIX,laozhang.ai,REJECT
+
+  # 兔子API
+  - DOMAIN-SUFFIX,tu-zi.com,REJECT
+
+  # CatRouter
+  - DOMAIN-SUFFIX,catrouter.net,REJECT
+
+  # PackyAPI
+  - DOMAIN-SUFFIX,packyapi.com,REJECT
+
+  # DMXAPI
+  - DOMAIN-SUFFIX,dmxapi.com,REJECT
+
+  # ---- 国内官方 API 端点 ----
+  # 阿里云百炼 / DashScope（通义）
+  - DOMAIN-SUFFIX,dashscope.aliyuncs.com,REJECT
+  - DOMAIN-SUFFIX,bailian.console.aliyun.com,REJECT
+
+  # 火山引擎方舟 Ark（豆包）
+  - DOMAIN-SUFFIX,ark.cn-beijing.volces.com,REJECT
+
+  # 百度智能云千帆（文心）
+  - DOMAIN-SUFFIX,qianfan.baidubce.com,REJECT
+  - DOMAIN-SUFFIX,qianfan.cloud.baidu.com,REJECT
+
+  # 腾讯混元 API
+  - DOMAIN-SUFFIX,hunyuan.tencentcloudapi.com,REJECT
+
+  # 讯飞星火 API
+  - DOMAIN-SUFFIX,spark-api.xf-yun.com,REJECT
+
+  # 注：DeepSeek / Kimi / 智谱 / MiniMax / 百川 / 阶跃等官方 API
+  # 域名已被上方各自的品牌后缀覆盖，无需重复添加
+
+  # ==============================
+  # 视频 / 直播
+  # ==============================
+
+  # B 站
+  - DOMAIN-SUFFIX,bilibili.com,REJECT
+  - DOMAIN-SUFFIX,bilivideo.com,REJECT
+
+  # 抖音
+  - DOMAIN-SUFFIX,douyin.com,REJECT
+
+  # 快手
+  - DOMAIN-SUFFIX,kuaishou.com,REJECT
+
+  # 优酷
+  - DOMAIN-SUFFIX,youku.com,REJECT
+
+  # 爱奇艺
+  - DOMAIN-SUFFIX,iqiyi.com,REJECT
+  - DOMAIN-SUFFIX,iq.com,REJECT
+
+  # 腾讯视频
+  - DOMAIN-SUFFIX,v.qq.com,REJECT
+
+  # 芒果 TV
+  - DOMAIN-SUFFIX,mgtv.com,REJECT
+
+  # 搜狐视频
+  - DOMAIN-SUFFIX,tv.sohu.com,REJECT
+
+  # 乐视视频
+  - DOMAIN-SUFFIX,le.com,REJECT
+
+  # 西瓜视频
+  - DOMAIN-SUFFIX,ixigua.com,REJECT
+
+  # 梨视频
+  - DOMAIN-SUFFIX,pearvideo.com,REJECT
+
+  # AcFun
+  - DOMAIN-SUFFIX,acfun.cn,REJECT
+
+  # 抖音火山版
+  - DOMAIN-SUFFIX,huoshan.com,REJECT
+
+  # 微视
+  - DOMAIN-SUFFIX,weishi.qq.com,REJECT
+
+  # 微信视频号
+  - DOMAIN-SUFFIX,channels.weixin.qq.com,REJECT
+
+  # PPTV 聚力
+  - DOMAIN-SUFFIX,pptv.com,REJECT
+
+  # 游戏直播：斗鱼 / 虎牙
+  - DOMAIN-SUFFIX,douyu.com,REJECT
+  - DOMAIN-SUFFIX,huya.com,REJECT
+
+  # ---- 以下境外视频/直播国内直连不通，如代理常开可取消注释 ----
+  # - DOMAIN-SUFFIX,youtube.com,REJECT
+  # - DOMAIN-SUFFIX,ytimg.com,REJECT
+  # - DOMAIN-SUFFIX,twitch.tv,REJECT
+  # - DOMAIN-SUFFIX,nicovideo.jp,REJECT
+
+  # ==============================
+  # 社交 / 问答社区
+  # ==============================
+
+  # 知乎（含知乎直答、知乎专栏）
+  - DOMAIN-SUFFIX,zhihu.com,REJECT
+
+  # 小红书
+  - DOMAIN-SUFFIX,xiaohongshu.com,REJECT
+
+  # 微博（含微博文章/问答/视频）
+  - DOMAIN-SUFFIX,weibo.com,REJECT
+  - DOMAIN-SUFFIX,weibo.cn,REJECT
+
+  # 豆瓣
+  - DOMAIN-SUFFIX,douban.com,REJECT
+
+  # ---- 以下境外社区国内直连不通，如代理常开可取消注释 ----
+  # - DOMAIN-SUFFIX,reddit.com,REJECT
+  # - DOMAIN-SUFFIX,quora.com,REJECT
+
+  # ==============================
+  # 技术博客 / 教程 / 刷题题解
+  # ==============================
+
+  # CSDN
+  - DOMAIN-SUFFIX,csdn.net,REJECT
+
+  # 博客园
+  - DOMAIN-SUFFIX,cnblogs.com,REJECT
+
+  # 掘金
+  - DOMAIN-SUFFIX,juejin.cn,REJECT
+
+  # SegmentFault 思否
+  - DOMAIN-SUFFIX,segmentfault.com,REJECT
+
+  # 简书
+  - DOMAIN-SUFFIX,jianshu.com,REJECT
+
+  # 开源中国 OSCHINA
+  - DOMAIN-SUFFIX,oschina.net,REJECT
+
+  # 51CTO
+  - DOMAIN-SUFFIX,51cto.com,REJECT
+
+  # InfoQ 中文
+  - DOMAIN-SUFFIX,infoq.cn,REJECT
+
+  # Stack Overflow / Stack Exchange 全系问答
+  - DOMAIN-SUFFIX,stackoverflow.com,REJECT
+  - DOMAIN-SUFFIX,stackexchange.com,REJECT
+
+  # 菜鸟教程
+  - DOMAIN-SUFFIX,runoob.com,REJECT
+
+  # W3School 中文
+  - DOMAIN-SUFFIX,w3school.com.cn,REJECT
+
+  # GeeksforGeeks
+  - DOMAIN-SUFFIX,geeksforgeeks.org,REJECT
+
+  # DEV Community
+  - DOMAIN-SUFFIX,dev.to,REJECT
+
+  # 新浪博客
+  - DOMAIN-SUFFIX,blog.sina.com.cn,REJECT
+
+  # 微信公众号文章（mp 平台，答案/解析高发地）
+  - DOMAIN-SUFFIX,mp.weixin.qq.com,REJECT
+
+  # 看云（文档/电子书/手册）
+  - DOMAIN-SUFFIX,kancloud.cn,REJECT
+
+  # ---- 以下境外博客平台国内直连不通，如代理常开可取消注释 ----
+  # - DOMAIN-SUFFIX,medium.com,REJECT
+  # - DOMAIN-SUFFIX,wordpress.com,REJECT
+  # - DOMAIN-SUFFIX,blogspot.com,REJECT
+
+  # ==============================
+  # 文库 / 文档分享 / 搜题 / 作业答案
+  # ==============================
+
+  # 豆丁网
+  - DOMAIN-SUFFIX,docin.com,REJECT
+
+  # 道客巴巴
+  - DOMAIN-SUFFIX,doc88.com,REJECT
+
+  # 原创力文档（Book118）
+  - DOMAIN-SUFFIX,book118.com,REJECT
+
+  # 人人文库
+  - DOMAIN-SUFFIX,renrendoc.com,REJECT
+
+  # 360doc 个人图书馆
+  - DOMAIN-SUFFIX,360doc.com,REJECT
+
+  # 新浪爱问共享资料
+  - DOMAIN-SUFFIX,ishare.iask.sina.com.cn,REJECT
+
+  # MBA 智库文档/百科
+  - DOMAIN-SUFFIX,mbalib.com,REJECT
+
+  # 作业帮（百度系）
+  - DOMAIN-SUFFIX,zybang.com,REJECT
+  - DOMAIN-SUFFIX,zuoyebang.com,REJECT
+
+  # 小猿搜题 / 猿辅导系
+  - DOMAIN-SUFFIX,yuanfudao.com,REJECT
+
+  # 学小易（大学搜题）
+  - DOMAIN-SUFFIX,51xuexiaoyi.com,REJECT
+
+  # Chegg（境外作业答案）
+  - DOMAIN-SUFFIX,chegg.com,REJECT
+
+  # Course Hero
+  - DOMAIN-SUFFIX,coursehero.com,REJECT
+
+  # StuDocu
+  - DOMAIN-SUFFIX,studocu.com,REJECT
+
+  # Scribd
+  - DOMAIN-SUFFIX,scribd.com,REJECT
+
+  # Quizlet（题库/卡片）
+  - DOMAIN-SUFFIX,quizlet.com,REJECT
+
+  # Brainly
+  - DOMAIN-SUFFIX,brainly.com,REJECT
+
+  # 注：百度文库/知道/百科/经验、百度系搜题，已被 baidu.com 整域覆盖
+
+  # ---- 数学/计算工具：考试若禁止使用再取消注释 ----
+  # - DOMAIN-SUFFIX,wolframalpha.com,REJECT
+  # - DOMAIN-SUFFIX,symbolab.com,REJECT
+  # - DOMAIN-SUFFIX,mathway.com,REJECT
+  # - DOMAIN-SUFFIX,desmos.com,REJECT
+  # - DOMAIN-SUFFIX,geogebra.org,REJECT
+
+  # ==============================
+  # 在线文档 / 办公协作 / 云笔记
+  # ==============================
+
+  # Microsoft 365 / Office 网页版
+  - DOMAIN-SUFFIX,office.com,REJECT
+  - DOMAIN-SUFFIX,microsoft365.com,REJECT
+  - DOMAIN-SUFFIX,office365.com,REJECT
+
+  # OneDrive / SharePoint / OneNote
+  - DOMAIN-SUFFIX,onedrive.live.com,REJECT
+  - DOMAIN-SUFFIX,onedrive.com,REJECT
+  - DOMAIN-SUFFIX,1drv.com,REJECT
+  - DOMAIN-SUFFIX,sharepoint.com,REJECT
+  - DOMAIN-SUFFIX,onenote.com,REJECT
+
+  # WPS / 金山文档
+  - DOMAIN-SUFFIX,wps.cn,REJECT
+  - DOMAIN-SUFFIX,wps.com,REJECT
+  - DOMAIN-SUFFIX,kdocs.cn,REJECT
+  - DOMAIN-SUFFIX,docer.com,REJECT
+
+  # 飞书（文档/多维表格/知识库，含飞书邮箱）
+  - DOMAIN-SUFFIX,feishu.cn,REJECT
+  - DOMAIN-SUFFIX,larksuite.com,REJECT
+
+  # 腾讯文档
+  - DOMAIN-SUFFIX,docs.qq.com,REJECT
+
+  # 石墨文档
+  - DOMAIN-SUFFIX,shimo.im,REJECT
+
+  # 语雀（文档/知识库/技术手册）
+  - DOMAIN-SUFFIX,yuque.com,REJECT
+
+  # Notion（应用/发布页/API）
+  - DOMAIN-SUFFIX,notion.so,REJECT
+  - DOMAIN-SUFFIX,notion.site,REJECT
+  - DOMAIN-SUFFIX,notion.com,REJECT
+
+  # Obsidian（Sync 同步 / Publish 发布）
+  - DOMAIN-SUFFIX,obsidian.md,REJECT
+
+  # HackMD 协作笔记
+  - DOMAIN-SUFFIX,hackmd.io,REJECT
+
+  # 印象笔记 / Evernote
+  - DOMAIN-SUFFIX,yinxiang.com,REJECT
+  - DOMAIN-SUFFIX,evernote.com,REJECT
+
+  # 有道云笔记
+  - DOMAIN-SUFFIX,note.youdao.com,REJECT
+
+  # 为知笔记
+  - DOMAIN-SUFFIX,wiz.cn,REJECT
+
+  # 幕布（大纲/笔记）
+  - DOMAIN-SUFFIX,mubu.com,REJECT
+
+  # Atlassian Confluence / Jira Cloud
+  - DOMAIN-SUFFIX,atlassian.net,REJECT
+
+  # ProcessOn（流程图/思维导图公开作品）
+  - DOMAIN-SUFFIX,processon.com,REJECT
+
+  # boardmix 博思白板
+  - DOMAIN-SUFFIX,boardmix.cn,REJECT
+
+  # Logseq（同步/发布）
+  - DOMAIN-SUFFIX,logseq.com,REJECT
+
+  # XMind（云同步/分享）
+  - DOMAIN-SUFFIX,xmind.cn,REJECT
+
+  # ---- 以下境外云文档国内直连不通，如代理常开可取消注释 ----
+  # - DOMAIN-SUFFIX,drive.google.com,REJECT
+  # - DOMAIN-SUFFIX,docs.google.com,REJECT
+  # - DOMAIN-SUFFIX,dropbox.com,REJECT
+  # - DOMAIN-SUFFIX,icloud.com,REJECT   # 同时影响 Apple 备忘录/无边记/iCloud 同步
+
+  # ==============================
+  # 网盘 / 文件传输 / 粘贴板
+  # ==============================
+
+  # 阿里云盘（含旧域 aliyundrive）
+  - DOMAIN-SUFFIX,alipan.com,REJECT
+  - DOMAIN-SUFFIX,aliyundrive.com,REJECT
+
+  # 腾讯微云
+  - DOMAIN-SUFFIX,weiyun.com,REJECT
+
+  # 115 网盘
+  - DOMAIN-SUFFIX,115.com,REJECT
+
+  # 蓝奏云
+  - DOMAIN-SUFFIX,lanzou.com,REJECT
+  - DOMAIN-SUFFIX,lanzouyun.com,REJECT
+
+  # 奶牛快传
+  - DOMAIN-SUFFIX,cowtransfer.com,REJECT
+
+  # 文叔叔传文件
+  - DOMAIN-SUFFIX,wenshushu.cn,REJECT
+
+  # 迅雷云盘
+  - DOMAIN-SUFFIX,pan.xunlei.com,REJECT
+
+  # 123 云盘
+  - DOMAIN-SUFFIX,123pan.com,REJECT
+
+  # 天翼云盘
+  - DOMAIN-SUFFIX,cloud.189.cn,REJECT
+
+  # 移动云盘（和彩云）
+  - DOMAIN-SUFFIX,yun.139.com,REJECT
+
+  # AirDroid（跨设备文件传输/远程控制）
+  - DOMAIN-SUFFIX,airdroid.com,REJECT
+
+  # Send Anywhere（跨设备传输）
+  - DOMAIN-SUFFIX,send-anywhere.com,REJECT
+
+  # 图床：SM.MS（截图答案分享）
+  - DOMAIN-SUFFIX,sm.ms,REJECT
+
+  # 粘贴板：Pastebin / JustPaste
+  - DOMAIN-SUFFIX,pastebin.com,REJECT
+  - DOMAIN-SUFFIX,justpaste.it,REJECT
+
+  # 注：百度网盘/百度网盘分享已被 baidu.com 整域覆盖；
+  #     夸克网盘已被 quark.cn 覆盖；OneDrive 见办公协作区
+
+  # ==============================
+  # 手写笔记 / PDF 标注 / 卡片应用（同步与发布域名）
+  # ==============================
+
+  # GoodNotes（Web/同步/协作）
+  - DOMAIN-SUFFIX,goodnotes.com,REJECT
+
+  # Notability（含 Gallery 公开笔记）
+  - DOMAIN-SUFFIX,notability.com,REJECT
+
+  # MarginNote（备份/恢复）
+  - DOMAIN-SUFFIX,marginnote.com,REJECT
+
+  # Noteshelf
+  - DOMAIN-SUFFIX,noteshelf.com,REJECT
+
+  # CollaNote
+  - DOMAIN-SUFFIX,collanote.com,REJECT
+
+  # LiquidText
+  - DOMAIN-SUFFIX,liquidtext.net,REJECT
+
+  # Anki（AnkiWeb 同步/牌组分享）
+  - DOMAIN-SUFFIX,ankiweb.net,REJECT
+
+  # RemNote
+  - DOMAIN-SUFFIX,remnote.com,REJECT
+
+  # MindNode（分享/同步）
+  - DOMAIN-SUFFIX,mindnode.com,REJECT
+
+  # ==============================
+  # 代码托管 / 代码仓库
+  # ==============================
+
+  # GitHub 系
+  - DOMAIN-SUFFIX,github.com,REJECT
+  - DOMAIN-SUFFIX,githubusercontent.com,REJECT
+  - DOMAIN-SUFFIX,githubassets.com,REJECT
+  - DOMAIN-SUFFIX,github.io,REJECT
+
+  # Gitee 码云
+  - DOMAIN-SUFFIX,gitee.com,REJECT
+  - DOMAIN-SUFFIX,gitee.io,REJECT
+
+  # GitLab 国际版
+  - DOMAIN-SUFFIX,gitlab.com,REJECT
+  - DOMAIN-SUFFIX,gitlab.io,REJECT
+
+  # 极狐 GitLab（国内版）
+  - DOMAIN-SUFFIX,gitlab.cn,REJECT
+  - DOMAIN-SUFFIX,jihulab.com,REJECT
+
+  # Bitbucket（Atlassian）
+  - DOMAIN-SUFFIX,bitbucket.org,REJECT
+
+  # 腾讯 CODING
+  - DOMAIN-SUFFIX,coding.net,REJECT
+
+  # 阿里云效 Codeup
+  - DOMAIN-SUFFIX,codeup.aliyun.com,REJECT
+
+  # Azure DevOps / Visual Studio
+  - DOMAIN-SUFFIX,dev.azure.com,REJECT
+  - DOMAIN-SUFFIX,visualstudio.com,REJECT
+
+  # Gitea
+  - DOMAIN-SUFFIX,gitea.com,REJECT
+  - DOMAIN-SUFFIX,gitea.io,REJECT
+
+  # Codeberg
+  - DOMAIN-SUFFIX,codeberg.org,REJECT
+
+  # SourceHut
+  - DOMAIN-SUFFIX,sourcehut.org,REJECT
+  - DOMAIN-SUFFIX,sr.ht,REJECT
+
+  # Launchpad（Canonical）
+  - DOMAIN-SUFFIX,launchpad.net,REJECT
+
+  # SourceForge
+  - DOMAIN-SUFFIX,sourceforge.net,REJECT
+
+  # GNU Savannah
+  - DOMAIN-SUFFIX,savannah.gnu.org,REJECT
+
+  # GitCode（CSDN）
+  - DOMAIN-SUFFIX,gitcode.com,REJECT
+  - DOMAIN-SUFFIX,gitcode.net,REJECT
+
+  # AtomGit（CSDN × 华为云 CodeArts）
+  - DOMAIN-SUFFIX,atomgit.com,REJECT
+
+  # 启智社区 OpenI（鹏城实验室）
+  - DOMAIN-SUFFIX,openi.org.cn,REJECT
+
+  # GitLink（CCF 开源社区）
+  - DOMAIN-SUFFIX,gitlink.org.cn,REJECT
+
+  # GitHub 镜像 / 加速代理
+  - DOMAIN-SUFFIX,kkgithub.com,REJECT
+  - DOMAIN-SUFFIX,gitclone.com,REJECT
+  - DOMAIN-SUFFIX,ghproxy.com,REJECT
+  - DOMAIN-SUFFIX,gh-proxy.com,REJECT
+
+  # ==============================
+  # 邮箱 / 网页邮件
+  # ==============================
+
+  # QQ 邮箱 / 腾讯企业邮箱
+  - DOMAIN-SUFFIX,mail.qq.com,REJECT
+  - DOMAIN-SUFFIX,exmail.qq.com,REJECT
+
+  # Foxmail
+  - DOMAIN-SUFFIX,foxmail.com,REJECT
+
+  # 网易系（163 / 126 / yeah / 188 / 企业邮）
+  - DOMAIN-SUFFIX,mail.163.com,REJECT
+  - DOMAIN-SUFFIX,qiye.163.com,REJECT
+  - DOMAIN-SUFFIX,mail.126.com,REJECT
+  - DOMAIN-SUFFIX,126.com,REJECT
+  - DOMAIN-SUFFIX,yeah.net,REJECT
+  - DOMAIN-SUFFIX,188.com,REJECT
+
+  # 新浪邮箱
+  - DOMAIN-SUFFIX,mail.sina.com.cn,REJECT
+  - DOMAIN-SUFFIX,vip.sina.com,REJECT
+
+  # 搜狐邮箱
+  - DOMAIN-SUFFIX,mail.sohu.com,REJECT
+
+  # 139 邮箱（中国移动）
+  - DOMAIN-SUFFIX,mail.139.com,REJECT
+  - DOMAIN-SUFFIX,mail.10086.cn,REJECT
+  - DOMAIN-SUFFIX,wapmail.10086.cn,REJECT
+
+  # 189 邮箱（中国电信）
+  - DOMAIN-SUFFIX,mail.189.cn,REJECT
+  - DOMAIN-SUFFIX,wapmail.189.cn,REJECT
+
+  # 沃邮箱（中国联通）
+  - DOMAIN-SUFFIX,mail.wo.cn,REJECT
+
+  # 阿里邮箱 / 阿里企业邮
+  - DOMAIN-SUFFIX,mail.aliyun.com,REJECT
+  - DOMAIN-SUFFIX,qiye.aliyun.com,REJECT
+
+  # 21cn 邮箱
+  - DOMAIN-SUFFIX,mail.21cn.com,REJECT
+
+  # TOM 邮箱（含 163.net）
+  - DOMAIN-SUFFIX,mail.tom.com,REJECT
+  - DOMAIN-SUFFIX,163.net,REJECT
+
+  # 263 邮箱（个人 / 企业）
+  - DOMAIN-SUFFIX,263.net,REJECT
+  - DOMAIN-SUFFIX,263xmail.com,REJECT
+
+  # Outlook / Hotmail（国内可直连）
+  - DOMAIN-SUFFIX,outlook.com,REJECT
+  - DOMAIN-SUFFIX,hotmail.com,REJECT
+  - DOMAIN-SUFFIX,outlook.live.com,REJECT
+  - DOMAIN-SUFFIX,outlook.office365.com,REJECT
+
+  # 注：飞书邮箱已被 feishu.cn 整域覆盖
+
+  # ---- 以下邮箱国内直连不通，如代理常开可取消注释 ----
+  # - DOMAIN-SUFFIX,gmail.com,REJECT
+  # - DOMAIN-SUFFIX,googlemail.com,REJECT
+  # - DOMAIN-SUFFIX,proton.me,REJECT
+  # - DOMAIN-SUFFIX,protonmail.com,REJECT
+  # - DOMAIN-SUFFIX,yahoo.com,REJECT
+
+  # ==============================
+  # 兜底规则
+  # ==============================
+
+  # 其余规则可继续在此追加
+  # - RULE-SET,xxx,PROXY
+  # - GEOIP,CN,DIRECT
+
+  - MATCH,DIRECT
