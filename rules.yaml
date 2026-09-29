@@ -754,9 +754,51 @@ rules:
   # 115 网盘
   - DOMAIN-SUFFIX,115.com,REJECT
 
-  # 蓝奏云
+  # 蓝奏云（主域 / 历史域 / 云域）
   - DOMAIN-SUFFIX,lanzou.com,REJECT
+  - DOMAIN-SUFFIX,lanzous.com,REJECT
   - DOMAIN-SUFFIX,lanzouyun.com,REJECT
+
+  # 蓝奏云全系分享域名（字母后缀）
+  - DOMAIN-SUFFIX,lanzoub.com,REJECT
+  - DOMAIN-SUFFIX,lanzouc.com,REJECT
+  - DOMAIN-SUFFIX,lanzoud.com,REJECT
+  - DOMAIN-SUFFIX,lanzoue.com,REJECT
+  - DOMAIN-SUFFIX,lanzouf.com,REJECT
+  - DOMAIN-SUFFIX,lanzoug.com,REJECT
+  - DOMAIN-SUFFIX,lanzouh.com,REJECT
+  - DOMAIN-SUFFIX,lanzoui.com,REJECT
+  - DOMAIN-SUFFIX,lanzouj.com,REJECT
+  - DOMAIN-SUFFIX,lanzouk.com,REJECT
+  - DOMAIN-SUFFIX,lanzoul.com,REJECT
+  - DOMAIN-SUFFIX,lanzoum.com,REJECT
+  - DOMAIN-SUFFIX,lanzoun.com,REJECT
+  - DOMAIN-SUFFIX,lanzouo.com,REJECT
+  - DOMAIN-SUFFIX,lanzoup.com,REJECT
+  - DOMAIN-SUFFIX,lanzouq.com,REJECT
+  - DOMAIN-SUFFIX,lanzout.com,REJECT
+  - DOMAIN-SUFFIX,lanzouu.com,REJECT
+  - DOMAIN-SUFFIX,lanzouv.com,REJECT
+  - DOMAIN-SUFFIX,lanzouw.com,REJECT
+  - DOMAIN-SUFFIX,lanzoux.com,REJECT
+  - DOMAIN-SUFFIX,lanzouy.com,REJECT
+  - DOMAIN-SUFFIX,lanzouz.com,REJECT
+
+  # 蓝奏云下载 / 跳转 / 账号基础设施
+  - DOMAIN-SUFFIX,woozooo.com,REJECT
+  - DOMAIN-SUFFIX,ilanzou.com,REJECT
+  - DOMAIN-SUFFIX,ulanzou.com,REJECT
+  - DOMAIN-SUFFIX,lanzn.com,REJECT
+  - DOMAIN-SUFFIX,lanzov.com,REJECT
+  - DOMAIN-SUFFIX,lanzv.com,REJECT
+  - DOMAIN-SUFFIX,lanosso.com,REJECT
+  - DOMAIN-SUFFIX,lanpv.com,REJECT
+  - DOMAIN-SUFFIX,lanpw.com,REJECT
+  - DOMAIN-SUFFIX,lanrar.com,REJECT
+  - DOMAIN-SUFFIX,baidupan.com,REJECT
+  - DOMAIN-SUFFIX,bakstotre.com,REJECT
+  - DOMAIN-SUFFIX,webgetstore.com,REJECT
+  - DOMAIN-SUFFIX,wwentua.com,REJECT
 
   # 奶牛快传
   - DOMAIN-SUFFIX,cowtransfer.com,REJECT
@@ -788,6 +830,23 @@ rules:
   # 粘贴板：Pastebin / JustPaste
   - DOMAIN-SUFFIX,pastebin.com,REJECT
   - DOMAIN-SUFFIX,justpaste.it,REJECT
+
+  # Linux 社区粘贴板：Debian / openSUSE / KDE
+  - DOMAIN-SUFFIX,paste.debian.net,REJECT
+  - DOMAIN-SUFFIX,paste.opensuse.org,REJECT
+  - DOMAIN-SUFFIX,paste.kde.org,REJECT
+
+  # dpaste（.com / .org）/ bpaste
+  - DOMAIN-SUFFIX,dpaste.com,REJECT
+  - DOMAIN-SUFFIX,dpaste.org,REJECT
+  - DOMAIN-SUFFIX,bpaste.net,REJECT
+
+  # 命令行终端粘贴板：paste.rs / ix.io / termbin / sprunge / clbin
+  - DOMAIN-SUFFIX,paste.rs,REJECT
+  - DOMAIN-SUFFIX,ix.io,REJECT
+  - DOMAIN-SUFFIX,termbin.com,REJECT
+  - DOMAIN-SUFFIX,sprunge.us,REJECT
+  - DOMAIN-SUFFIX,clbin.com,REJECT
 
   # 注：百度网盘/百度网盘分享已被 baidu.com 整域覆盖；
   #     夸克网盘已被 quark.cn 覆盖；OneDrive 见办公协作区
