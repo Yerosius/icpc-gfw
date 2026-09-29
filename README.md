@@ -1,5 +1,5 @@
 # icpc-gfw
-Baning common websites via Clash in the ICPC.
+Banning common websites via Clash in the ICPC.
 
 共 **280 条域名屏蔽（REJECT）+ 1 条 `MATCH,PROXY` 兜底**，另有 **44 条注释规则**（国内直连不通或需按需开启）。
 
