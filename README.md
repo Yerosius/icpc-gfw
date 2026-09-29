@@ -2,9 +2,9 @@
 
 **1. 搜索引擎**：Bing（bing.com/bingapis）、百度（整域，同时覆盖知道/百科/经验/文库/网盘/贴吧）、搜狗（含微信搜索）、360搜索、神马、夸克（含网盘/题库）、秘塔AI搜索、纳米AI搜索、头条搜索、Yahoo Japan
 
-**2. 国内 AI 大模型**：DeepSeek、通义千问（tongyi/qianwen/qwen.ai）、Kimi、智谱GLM（zhipuai/chatglm/bigmodel）、豆包、文心一言、腾讯元宝、腾讯混元、讯飞星火、天工、360智脑、商汤日日新/商量、海螺/MiniMax、百川、零一万物、阶跃星辰、面壁、扣子Coze、可灵、即梦、Liblib、魔搭ModelScope、小米MiMo、无问芯穹、hf-mirror、Trae、GitHub Copilot
+**2. 国内 AI 大模型**：DeepSeek、通义千问、Kimi、智谱GLM、豆包、文心一言、腾讯元宝、腾讯混元、腾讯ima、讯飞星火、天工、360智脑、商汤日日新/商量、海螺/MiniMax、百川、零一万物、阶跃星辰、面壁、扣子Coze、可灵、即梦、Liblib、魔搭ModelScope、小米MiMo、无问芯穹、hf-mirror、Trae
 
-**3. 大模型 API 中转站 / 聚合平台**：ChatAnywhere、AiHubMix、302.AI、OhMyGPT、CloseAI、OpenAI-HK（open-hk/openai-hk）、API2D、GPTGOD、V3API、硅基流动、API易、HenAPI、非线、Ofox、PoloAPI、4SAPI、147API、V-API(gpt.ge)、AICodeMirror、AnyAIGC、code0、接口AI、WenModel、aiberm、deepkey、SkyHope、星链API、FK Claude、IKunCode、X-aio、Alsa、小米API、APIMan、QQQRouter、老张API、兔子API、CatRouter、PackyAPI、DMXAPI，以及官方端点：DashScope/百炼、火山方舟、千帆、混元API、星火API
+**3. 大模型 API 中转站 / 聚合平台**：ChatAnywhere、AiHubMix、302.AI、OhMyGPT、CloseAI、OpenAI-HK（open-hk/openai-hk）、API2D、GPTGOD、V3API、硅基流动、API易、HenAPI、非线、Ofox、PoloAPI、4SAPI、147API、V-API、AICodeMirror、AnyAIGC、code0、接口AI、WenModel、aiberm、deepkey、SkyHope、星链API、FK Claude、IKunCode、X-aio、Alsa、小米API、APIMan、QQQRouter、老张API、兔子API、CatRouter、PackyAPI、DMXAPI，以及官方端点：DashScope/百炼、火山方舟、千帆、混元API、星火API
 
 **4. 视频与流媒体**：B站（含 bilivideo CDN）、抖音、快手、优酷、爱奇艺、腾讯视频、芒果TV、搜狐视频、乐视、西瓜、梨视频、AcFun、抖音火山版、微视、微信视频号、PPTV、斗鱼、虎牙
 
